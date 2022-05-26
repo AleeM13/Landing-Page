@@ -9,6 +9,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 10px 25px;
 }
 
@@ -18,7 +19,6 @@ body {
 }
 
 .navbar a {
-    margin: 0 40px;
     text-decoration: none;
     color: #d00000;
     font-size: 1.5em;
@@ -26,9 +26,8 @@ body {
 
 .navbar ul {
     display: flex;
-}
-
-.navbar ul li {
     list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
 }
-
