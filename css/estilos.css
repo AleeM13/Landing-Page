@@ -14,6 +14,8 @@ body {
 }
 
 .navbar img {
+    display: flex;
+    flex-shrink: 3;
     width: 70px;
     height: 70px;
 }
@@ -30,4 +32,23 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 35%;
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .navbar a {
+        font-size: 1.1em;
+    }
+
+    .navbar ul {
+        width: 70%;
+    }
 }
