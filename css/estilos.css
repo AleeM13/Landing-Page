@@ -2,15 +2,16 @@
 
 body {
     font-family: 'Oswald', sans-serif;
+    background-color: #000;
 }
 
 .navbar {
-    background-color: #03071e;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 10px 25px;
+    border-bottom: 3px solid #FC1E4F;
 }
 
 .navbar img {
@@ -20,10 +21,15 @@ body {
     height: 70px;
 }
 
-.navbar a {
+.navbar ul a {
     text-decoration: none;
-    color: #FC1E4F;
+    color: #fff;
     font-size: 1.5em;
+    transition: all .2s;
+}
+
+.navbar ul a:hover {
+    color: #FC1E4F;
 }
 
 .navbar ul {
@@ -34,7 +40,79 @@ body {
     width: 35%;
 }
 
-@media (min-width: 320px) and (max-width: 800px) {
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.slogan h1 {
+    color: #FFf;
+    font-size: 2.4em;
+}
+
+.slogan .color {
+    color: #FC1E4F;
+}
+
+.slogan p {
+    color: #fff;
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+.img img {
+    width: 450px;
+    height: 350px;
+    border-radius: 7px;
+    border: .1px solid #111;
+    transition: all .2s;
+}
+
+.img img:hover {
+    box-shadow: 0 0 12px #fff;
+}
+
+.publico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.publico ul {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+
+.publico ul li {
+    text-align: center;
+    list-style: none;
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+.publico h5 {
+    text-align: center;
+    font-size: 1.7em;
+    margin: 10px;
+}
+
+.publico .color {
+    color: #FC1E4F;
+}
+
+@media (max-width: 800px) {
     .navbar {
         padding: 10px;
     }
@@ -49,6 +127,62 @@ body {
     }
 
     .navbar ul {
-        width: 70%;
+        width: 80%;
+    }
+
+    .container {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .slogan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    
+    .slogan h1 {
+        font-size: 1.8em;
+    }
+
+    .slogan p {
+        font-size: 1.3em;
+        line-height: 1.5;
+    }
+    
+    .img img {
+        margin-top: 30px;
+        width: 310px;
+        height: 250px;
+    }
+
+    .publico {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    
+    .publico ul {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .publico ul li {
+        text-align: center;
+        list-style: none;
+        font-size: 1.3em;
+        line-height: 1.5;
+    }
+    
+    .publico h5 {
+        text-align: center;
+        font-size: 1.6em;
+        margin: 10px;
     }
 }
