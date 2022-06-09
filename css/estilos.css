@@ -1,30 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
 
 body {
-    font-family: 'Oswald', sans-serif;
     background-color: #000;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 10px 25px;
     border-bottom: 3px solid #FC1E4F;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 25px;
 }
 
 .navbar img {
     display: flex;
     flex-shrink: 3;
-    width: 70px;
     height: 70px;
+    width: 70px;
 }
 
 .navbar ul a {
-    text-decoration: none;
     color: #fff;
     font-size: 1.5em;
+    text-decoration: none;
     transition: all .2s;
 }
 
@@ -33,29 +34,28 @@ body {
 }
 
 .navbar ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
     align-items: center;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
     width: 35%;
 }
 
 .container {
-    margin-top: 50px;
+    align-items: center;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    margin-top: 50px;
 }
 
 .slogan {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 60%;
 }
 
 .slogan h1 {
-    color: #FFf;
     font-size: 2.4em;
 }
 
@@ -64,17 +64,16 @@ body {
 }
 
 .slogan p {
-    color: #fff;
     font-size: 1.3em;
     line-height: 1.4;
 }
 
 .img img {
-    width: 450px;
-    height: 350px;
-    border-radius: 7px;
     border: .1px solid #111;
+    border-radius: 7px;
+    height: 350px;
     transition: all .2s;
+    width: 450px;
 }
 
 .img img:hover {
@@ -82,34 +81,90 @@ body {
 }
 
 .publico {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 20px;
 }
 
 .publico ul {
     display: flex;
     flex-direction: column;
-    color: #fff;
 }
 
 
 .publico ul li {
-    text-align: center;
-    list-style: none;
     font-size: 1.3em;
     line-height: 1.4;
+    list-style: none;
+    text-align: center;
 }
 
 .publico h5 {
-    text-align: center;
     font-size: 1.7em;
     margin: 10px;
+    text-align: center;
 }
 
 .publico .color {
     color: #FC1E4F;
+}
+
+.container2 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0 40px 0;
+}
+
+.container2 h2 {
+    font-size: 2.2em;
+}
+
+.container2 h3 {
+    font-size: 1.4em;
+    margin: 15px 0;
+}
+
+.container2 p {
+    font-size: 1.2em;
+    text-align: center;
+    width: 80%;
+}
+
+.pago {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.tarjeta {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.envio {
+    align-items: center;
+    border-left: 1px solid #222;
+    border-right: 1px solid #222;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.protegido {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+i {
+    color: #FC1E4F;
+    font-size: 5em;
 }
 
 @media (max-width: 800px) {
@@ -118,8 +173,8 @@ body {
     }
 
     .navbar img {
-        width: 45px;
         height: 45px;
+        width: 45px;
     }
 
     .navbar a {
@@ -131,17 +186,17 @@ body {
     }
 
     .container {
-        margin-top: 30px;
+        align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        margin-top: 30px;
     }
     
     .slogan {
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
         width: 90%;
     }
     
@@ -155,15 +210,15 @@ body {
     }
     
     .img img {
+        height: 250px;
         margin-top: 30px;
         width: 310px;
-        height: 250px;
     }
 
     .publico {
+        align-items: center;
         display: flex;
         justify-content: center;
-        align-items: center;
         margin-top: 40px;
     }
     
@@ -174,15 +229,56 @@ body {
     }
 
     .publico ul li {
-        text-align: center;
-        list-style: none;
         font-size: 1.3em;
         line-height: 1.5;
+        list-style: none;
+        text-align: center;
     }
     
     .publico h5 {
-        text-align: center;
         font-size: 1.6em;
         margin: 10px;
+        text-align: center;
+    }
+
+    .container2 h2 {
+        font-size: 1.8em;
+    }
+    
+    .container2 h3 {
+        font-size: 1.4em;
+        margin: 15px 0;
+    }
+    
+    .container2 p {
+        font-size: 1.2em;
+        text-align: center;
+        width: 80%;
+    }
+    
+    .pago {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    
+    .tarjeta {
+        width: 100%;
+    }
+    
+    .envio {
+        border: none;
+        width: 100%;
+    }
+    
+    .protegido {
+        width: 100%;
+    }
+    
+    i {
+        font-size: 3.7em;
     }
 }
