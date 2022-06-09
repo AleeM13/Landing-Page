@@ -241,6 +241,11 @@ i {
         text-align: center;
     }
 
+    .container2 {
+        margin: 70px 0 40px 0;
+    }
+    
+
     .container2 h2 {
         font-size: 1.8em;
     }
