@@ -64,14 +64,13 @@ body {
 }
 
 .slogan p {
-    font-size: 1.3em;
+    font-size: 1.7em;
     line-height: 1.4;
 }
 
 .img img {
-    border: .1px solid #111;
     border-radius: 7px;
-    height: 350px;
+    height: 440px;
     transition: all .2s;
     width: 450px;
 }
@@ -84,7 +83,7 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 70px;
 }
 
 .publico ul {
@@ -114,7 +113,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 70px 0 40px 0;
+    margin: 120px 0 40px 0;
 }
 
 .container2 h2 {
@@ -136,7 +135,7 @@ body {
     align-items: center;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .tarjeta {
@@ -213,6 +212,7 @@ i {
         height: 250px;
         margin-top: 30px;
         width: 310px;
+        border: .1px solid #111;
     }
 
     .publico {
