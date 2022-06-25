@@ -49,14 +49,14 @@ body {
 }
 
 .slogan {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 40%;
 }
 
 .slogan h1 {
-    font-size: 2.4em;
+    font-size: 2em;
 }
 
 .slogan .color {
@@ -64,7 +64,7 @@ body {
 }
 
 .slogan p {
-    font-size: 1.7em;
+    font-size: 1.3em;
     line-height: 1.4;
 }
 
@@ -251,12 +251,12 @@ body {
 }
 
 .contacto h3 {
-    font-size: 2.2em;
+    font-size: 1.8em;
     margin-bottom: 50px;
 }
 
 .contacto h4 {
-    font-size: 1.7em;
+    font-size: 1.4em;
     color: #FC1E4F;
     margin-bottom: 30px;
 }
